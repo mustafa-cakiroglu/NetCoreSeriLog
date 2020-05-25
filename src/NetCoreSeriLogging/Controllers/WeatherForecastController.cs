@@ -20,6 +20,8 @@ namespace NetCoreSeriLogging.Controllers
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
+            //you just need look at localhost:9200/{CreatedIndex}/_search? or Kibana
+            throw new Exception("Created Manual Exception");
             _logger = logger;
         }
 
